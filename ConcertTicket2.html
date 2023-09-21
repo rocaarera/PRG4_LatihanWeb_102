@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Concert Ticket Reservations</title>
+    <style>
+        /* Style elemen dalam dashboard */
+        body {
+            /* font yang digunakan */
+            font-family: cursive, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: white; /* warna latar belakang header putih */
+            padding: 10px; /* space di sekitar judul */
+        }
+
+        h1 {
+            font-family: monospace;
+        }
+
+        h2 {
+            font-family: monospace;
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 450px;
+            height: 300px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 50%;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: 400px;
+        }
+
+        footer {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            <h1 style="color: orange;">ALL HAPPIER Concert Tickets</h1>
+        </marquee>
+    </header>
+
+    <h2>Nadin Amizah Artist ⭐</h2>
+    <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2023/03/02/NA-2-2805760486.jpg" alt="Artis Nadin">
+
+    <h2>Concert List</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Price</th>
+            <th>Order</th>
+        </tr>
+        <tr>
+            <td>21 Oktober 2023</td>
+            <td>20:00</td>
+            <td>Summarecon Mall Bekasi</td>
+            <td>80K</td>
+            <td><button>Buy Ticket</button></td>
+        </tr>
+        <tr>
+            <td>27 Oktober 2023</td>
+            <td>19:30</td>
+            <td>Gramedia Harapan Indah</td>
+            <td>75K</td>
+            <td><button>Buy Ticket</button></td>
+        </tr>
+    </table>
+
+    <h2>Ticket reservations</h2>
+    <form>
+        <label>Select Payment Method</label><br>
+        <input type="radio" name="payment" value="cash"> Cash<br>
+        <input type="radio" name="payment" value="dana"> Dana<br>
+        <input type="radio" name="payment" value="bank"> Transfer Bank<br>
+
+        <h3>Order Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="quantity">How many tickets:</label>
+        <input type="number" id="quantity" name="quantity"><br>
+
+        <input type="checkbox" id="terms" name="terms" value="agree">
+        <label for="terms">I agree to the terms and conditions.</label><br>
+
+        <input type="submit" value="Buy Ticket">
+        <input type="reset" value="Reset">
+    </form>
+    <h2>☆ Teaser Video ☆</h2>
+    <!-- Menambahkan iframe untuk video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5UihqGaL5nM?si=bNIULH_Wk0ucqD8p" frameborder="0" allowfullscreen></iframe><br>
+    <footer>
+        <p>&copy; Copyright All HappierConcert. All rights reserved.</p>
+    </footer>
+</body>
+</html>
